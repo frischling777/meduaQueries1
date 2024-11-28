@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+header {
+  width: 100vw;
+  height: 15vh;
+  background-color: rgb(10, 208, 247);
+}
+article {
+  width: 31%;
+  height: 15vh;
+}
+.art1 {
+  background-color: aquamarine;
+}
+
+.art2 {
+  background-color: peru;
+}
+
+.art3 {
+  background-color: rgb(237, 133, 226);
+}
+
+.art4 {
+  background-color: rgb(212, 243, 130);
+}
+aside {
+  background-color: rgb(67, 102, 245);
+}
+
+footer {
+  background-color: rgb(108, 156, 239);
+  height: 15vh;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+@media (max-widht: 768px) {
+}
+
+@media (max-width: 576px) {
+}
