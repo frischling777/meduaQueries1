@@ -2,49 +2,114 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+p {
   text-align: center;
 }
+
 header {
-  width: 100vw;
-  height: 15vh;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+header,
+footer,
+.glArt,
+aside {
+  padding: 2rem 0;
+  gap: 10px;
+}
+
+aside,
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(10, 208, 247);
 }
-article {
-  width: 31%;
-  height: 15vh;
+
+.hauptcont {
+  display: flex;
+  gap: 10px;
 }
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  gap: 10px;
+}
+
+.glArt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .art1 {
   background-color: aquamarine;
 }
 
-.art2 {
+.art3 {
   background-color: peru;
 }
 
-.art3 {
+.art2 {
   background-color: rgb(237, 133, 226);
 }
 
 .art4 {
   background-color: rgb(212, 243, 130);
 }
+
 aside {
-  background-color: rgb(67, 102, 245);
+  background-color: rgb(91, 163, 246);
+  max-width: 100%;
+  width: 40%;
 }
 
 footer {
-  background-color: rgb(108, 156, 239);
-  height: 15vh;
+  background-color: rgb(82, 121, 200);
 }
 
 section {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .hauptcont {
+    flex-wrap: wrap-reverse;
+  }
+  aside {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .glArt {
+    width: 50%;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (max-width: 576px);
+.content {
+  flex-direction: column;
+  width: 100%;
+}
+
+.glArt {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
 }
 
-@media (max-widht: 768px) {
-}
-
-@media (max-width: 576px) {
+.hauptcont,
+.content {
+  gap: 10px;
 }
